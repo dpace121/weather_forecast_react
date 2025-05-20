@@ -38,7 +38,7 @@ const Weather = () => {
             return;
         }
         try{
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=8d2bafa1303a38f085aa24796b244d09`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid="API_KEY_ADD"`;
             const response = await fetch(url);
             const data = await response.json();
 
